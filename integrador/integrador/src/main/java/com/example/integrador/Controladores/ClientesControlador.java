@@ -52,7 +52,7 @@ public class ClientesControlador {
         model.addAttribute("clientes", clientes);
         return "formclientes";
     }
-    
+    @GetMapping("/delete")
     public String eliminarFormClientes(Model model, @RequestParam("id") Long id) {
         servicioCliente.delete(id);
         return "redirect:/clientelista";
