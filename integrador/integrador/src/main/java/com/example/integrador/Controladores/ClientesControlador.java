@@ -35,15 +35,12 @@ public class ClientesControlador {
     }
     
     @PostMapping("/registrarclientes")
-    public String registrarClientes(@ModelAttribute Clientes clientes, Model model) {
-        try {
+    public String registrarClientes(
+            @ModelAttribute Clientes clientes, Model model) {
+        
             servicioCliente.save(clientes);
             return "redirect:/clientelista";
-        } catch (DataIntegrityViolationException e) {
-            model.addAttribute("errorMessage", e.getMessage().toString());
-            model.addAttribute("clientes", clientes);
-            return "formclientes";
-        }
+      
     }
     
     @GetMapping("/getEdit/{codigoclientes}")
