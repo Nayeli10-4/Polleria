@@ -28,7 +28,7 @@ public class Clientes {
     
     private String nombre;
     private String apellido;
-    private String correo;
+    private String Correo_Electronico;
     private String telefono;
     private String direccion;
     
