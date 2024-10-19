@@ -25,6 +25,15 @@
 
         <!-- Formulario para crear o editar un cliente -->
         <form th:action="@{/registrarclientes}" th:object="${clientes}" method="post" class="needs-validation">
+            
+            <div class="form-group">
+                <!-- Campo para id -->
+                <label for="id">id:</label>
+                <input type="text" id="id" th:field="*{cliente_id}" class="form-control" placeholder="id" readonly="true" />
+                <div class="invalid-feedback">Por favor, ingrese el nombre.</div>
+            </div>
+            
+            
             <div class="form-group">
                 <!-- Campo para Nombre -->
                 <label for="nombre">Nombre:</label>
