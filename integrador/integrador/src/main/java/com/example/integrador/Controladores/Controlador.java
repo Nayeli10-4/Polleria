@@ -44,7 +44,7 @@ public class Controlador {
         return "fromcompra";
     }
     
-    @RequestMapping("/dataclientfrom")
+    /*@RequestMapping("/dataclientfrom")
     public String dataclientfrom(@RequestParam("nombre") String nombre,
             @RequestParam("apellidos") String apellidos,
             @RequestParam("correo") String correo,
@@ -58,7 +58,7 @@ public class Controlador {
         model.addAttribute("numero", numero);
         model.addAttribute("direccion", direccion);
         return "clienteform";
-    }
+    }*/
     
     @GetMapping("/carrito")
     public String especificaciones(Model model) {
