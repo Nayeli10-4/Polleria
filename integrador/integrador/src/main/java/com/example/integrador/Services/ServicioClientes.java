@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-
 @Service
 public class ServicioClientes {
     @Autowired
@@ -35,7 +34,7 @@ public class ServicioClientes {
     //DELETE
     @Transactional
     public void delete(Long id) {
-        clientesDAO.deleteAll();
+        clientesDAO.deleteById(id);
     }
     
 }
