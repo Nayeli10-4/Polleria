@@ -55,12 +55,14 @@ public class ClientesControlador {
     
     
     
-    @GetMapping("/getEdit/{codigoclientes}")
-    public String editarFormClientes(Model model, @PathVariable("codigoclientes") Long id) {
+    @GetMapping("/getEdit/{cliente_id}")
+    public String editarFormClientes(Model model, @PathVariable("cliente_id") Long id) {
         Clientes clientes = servicioCliente.get(id);
         model.addAttribute("clientes", clientes);
         return "formclientes";
     }
+    
+    
     @GetMapping("/delete")
     public String eliminarFormClientes(Model model, @RequestParam("id") Long id) {
         servicioCliente.delete(id);
