@@ -66,7 +66,7 @@ public class ClientesControlador {
     @GetMapping("/delete/{cliente_id}")
     public String eliminarFormClientes(@RequestParam("cliente_id") Long id) {
         servicioCliente.delete(id);
-        return "redirect:/clientelista";
+        return "redirect:clientelista";
     }
     
     
