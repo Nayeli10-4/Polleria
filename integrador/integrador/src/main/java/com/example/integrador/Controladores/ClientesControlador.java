@@ -46,6 +46,15 @@ public class ClientesControlador {
         }
     }
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     @GetMapping("/getEdit/{codigoclientes}")
     public String editarFormClientes(Model model, @PathVariable("codigoclientes") Long id) {
         Clientes clientes = servicioCliente.get(id);
