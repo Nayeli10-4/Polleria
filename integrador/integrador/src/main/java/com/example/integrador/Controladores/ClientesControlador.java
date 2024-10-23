@@ -55,7 +55,7 @@ public class ClientesControlador {
     
     
     
-    @GetMapping("/getEdit/{cliente_id}(id=${cliente_id})")
+    @GetMapping("/getEdit/{cliente_id}")
     public String editarFormClientes(Model model, @PathVariable("cliente_id") Long id) {
         Clientes clientes = servicioCliente.get(id);
         model.addAttribute("clientes", clientes);
