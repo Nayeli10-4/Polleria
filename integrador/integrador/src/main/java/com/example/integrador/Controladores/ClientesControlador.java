@@ -63,8 +63,8 @@ public class ClientesControlador {
     }
     
     
-    @GetMapping("/delete")
-    public String eliminarFormClientes(Model model, @RequestParam("id") Long id) {
+    @GetMapping("/delete/{cliente_id}")
+    public String eliminarFormClientes(Model model, @RequestParam("cliente_id") Long id) {
         servicioCliente.delete(id);
         return "redirect:/clientelista";
     }
