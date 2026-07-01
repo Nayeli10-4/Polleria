@@ -78,7 +78,4 @@ Si deseas colaborar con el proyecto, envía tus sugerencias o mejoras en nuestro
 **Equipo de Desarrollo**
 
 - **👤 Nayeli Yamile Ipanaque Aquino:** nayeli@gmail.com
-- **👤 Josue Quispe Franco:** josueqf@gmail.com
-- **👤 Sebastian Alejandro Berna Díaz:** sebastianbd@gmail.com
-- **👤 Omar Antony Zamora Yepez:** omaramy@gmail.com
-- **👤 Jose Antonio Montoro Garcia:** josemga@gmail.com
+
